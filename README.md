@@ -11,6 +11,29 @@ Run the following command in your console and you're up and running!
 wget https://raw.githubusercontent.com/micheleriva/shell-snippets/copypasta.sh | sh
 ```
 
+# Index
+- [Aliases](#aliases)
+  - [Misc](#misc)
+    - [cls](#cls)
+    - [psa](#psa)
+    - [rmf](#rmf)
+  - [Listing](#listing)
+    - [l](#l)
+    - [ll](#ll)
+    - [la](#la)
+    - [lla](#lla)
+    - [ls](#ls)
+  - [Grep](#grep)
+    - [grep](#grep-1)
+  - [Git](#git)
+    - [g](#g)
+    - [gpull](#gpull)
+    - [gpush](#gpush)
+- [Methods](#methods)
+  - [cdb](#cdb)
+  - [mkdircd](#mkdircd)
+  - [runx](#runx)
+
 # Included Snippets
 
 ## Aliases
