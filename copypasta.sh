@@ -1,0 +1,1 @@
+cat ./snippets.sh >> ~/.bashrc && source ~/.bashrc
