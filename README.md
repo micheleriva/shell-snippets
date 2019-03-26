@@ -13,91 +13,91 @@ wget https://raw.githubusercontent.com/micheleriva/shell-snippets/copypasta.sh |
 
 # Included Snippets
 
-### Aliases
+## Aliases
 
-##### Misc
+### Misc
 
-**cls** <br />
+#### cls
 Clear the console using `cls` instead of `clear`
 ```sh
 alias cls="clear"
 ```
 
-**psa** <br />
+#### psa
 Shorter for `ps aux | grep`
 ```sh
 alias psa="ps aux | grep"
 ```
 
-**rmf**
+#### rmf
 Shorter for `sm -rf`
 ```sh
 alias rmf="rm -rf"
 ```
 
-##### Listing
+### Listing
 
-**l**
+#### l
 Shorter for `ls`
 ```sh
 alias l="ls"
 ```
 
-**ll**
+#### ll
 Shorter for `ls -hl`
 ```sh
 alias ll="ls -hl"
 ```
 
-**la**
+#### la
 Shorter for `ls -A`
 ```sh
 alias la="ls -A"
 ```
 
-**lla**
+#### lla
 Shorter for `ls -alh`
 ```sh
 alias lla="ls -alh"
 ```
 
-**ls**
+#### ls
 Shorter for `ls -Gp`
 ```sh
 alias ls="ls -Gp"
 ```
 
-##### Grep
+### Grep
 
-**grep**
+#### grep
 Shorter for `grep --color`
 ```sh
 alias grep="grep --color"
 ```
 
-##### Git
+### Git
 
-**g**
+#### g
 Shorter for `git`
 ```sh
 alias g="git"
 ```
 
-**gpull**
+#### gpull
 Shorter for `git pull <current-branch>`
 ```sh
 alias gpull="g pull origin $(git_branch_name)"
 ```
 
-**gpush**
+#### gpush
 Shorter for `git push origin <current-branch>`
 ```sh
 alias gpush="g push origin $(git_branch_name)"
 ```
 
-### Methods
+## Methods
 
-**cdb**
+#### cdb
 Cd parent directory `n` times.
 
 Example: `cdb 3` => `cd ../../../`
@@ -110,7 +110,7 @@ function cdb() {
 }"
 ```
 
-**mkdircd***
+#### mkdircd
 Make new directory and enter it.
 
 Example: `mkdircd foo` => `mkdircd foo && cd foo`
@@ -120,7 +120,7 @@ function mkdircd() {
 }
 ```
 
-**runx**
+#### runx
 Run any function multiple times
 
 ```sh
