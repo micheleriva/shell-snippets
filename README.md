@@ -17,115 +17,90 @@ wget https://raw.githubusercontent.com/micheleriva/shell-snippets/copypasta.sh |
 
 ##### Misc
 
-<details><summary>`cls`</summary>
-<p>
+**cls** <br />
+Clear the console using `cls` instead of `clear`
 ```sh
 alias cls="clear"
 ```
-</p>
-</details>
 
-<details><summary>`psa`</summary>
-<p>
+**psa** <br />
+Shorter for `ps aux | grep`
 ```sh
 alias psa="ps aux | grep"
 ```
-</p>
-</details>
 
-<details><summary>`rmf`</summary>
-<p>
+**rmf**
+Shorter for `sm -rf`
 ```sh
 alias rmf="rm -rf"
 ```
-</p>
-</details>
 
 ##### Listing
 
-<details><summary>`l`</summary>
-<p>
+**l**
+Shorter for `ls`
 ```sh
 alias l="ls"
 ```
-</p>
-</details>
 
-<details><summary>`ll`</summary>
-<p>
+**ll**
+Shorter for `ls -hl`
 ```sh
 alias ll="ls -hl"
 ```
-</p>
-</details>
 
-<details><summary>`la`</summary>
-<p>
+**la**
+Shorter for `ls -A`
 ```sh
 alias la="ls -A"
 ```
-</p>
-</details>
 
-<details><summary>`lla`</summary>
-<p>
+**lla**
+Shorter for `ls -alh`
 ```sh
 alias lla="ls -alh"
 ```
-</p>
-</details>
 
-<details><summary>`ls`</summary>
-<p>
+**ls**
+Shorter for `ls -Gp`
 ```sh
 alias ls="ls -Gp"
 ```
-</p>
-</details>
 
 ##### Grep
 
-<details><summary>`grep`</summary>
-<p>
+**grep**
+Shorter for `grep --color`
 ```sh
 alias grep="grep --color"
 ```
-</p>
-</details>
 
 ##### Git
 
-<details><summary>`g`</summary>
-<p>
+**g**
+Shorter for `git`
 ```sh
 alias g="git"
 ```
-</p>
-</details>
 
-<details><summary>`gpull`</summary>
-<p>
+**gpull**
+Shorter for `git pull <current-branch>`
 ```sh
 alias gpull="g pull origin $(git_branch_name)"
 ```
-</p>
-</details>
 
-<details><summary>`gpush`</summary>
-<p>
+**gpush**
+Shorter for `git push origin <current-branch>`
 ```sh
 alias gpush="g push origin $(git_branch_name)"
 ```
-</p>
-</details>
 
 ### Methods
 
-##### cdb
-<details><summary>`cdb`</summary>
-<p>
+**cdb**
+Cd parent directory `n` times.
 
-Use `cdb 3` insted of `cd ../../../`
+Example: `cdb 3` => `cd ../../../`
 
 ```sh
 function cdb() {
@@ -134,27 +109,18 @@ function cdb() {
   done
 }"
 ```
-</p>
-</details>
 
-##### mkdircd
-<details><summary>`mkdircd`</summary>
-<p>
+**mkdircd***
+Make new directory and enter it.
 
-Use `mkdircd foo` insted of `mkdir foo && cd foo`
-
+Example: `mkdircd foo` => `mkdircd foo && cd foo`
 ```sh
 function mkdircd() {
   mkdir $1 && cd $1
 }
 ```
-</p>
-</details>
 
-##### runx
-<details><summary>`runx`</summary>
-<p>
-
+**runx**
 Run any function multiple times
 
 ```sh
@@ -164,8 +130,6 @@ function runx() {
   done
 }
 ```
-</p>
-</details>
 
 # License
 [MIT](./LICENSE.md)
